@@ -46,6 +46,7 @@
     align-items: center;
     gap: 10px;
 }
+
 .btn-login,.btn-signup {
     text-decoration: none;
     padding: 8px 14px;
@@ -72,6 +73,13 @@
 }
 .btn-signup:hover {
     background-color: #a3dcfa;
+}
+
+.mode{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size:18px;
 }
 
 .lang{
@@ -454,6 +462,130 @@
     text-decoration: none;
     color: #000c25;
 }
+
+
+
+
+
+
+body.dark-mode {
+    background-color: #07002e; 
+    color: #f1f1f1;           
+    
+}
+
+body.dark-mode .navbar {
+    background-color: #07002e;
+}
+
+body.dark-mode .nav-links a {
+    color: #e0e0e0;
+}
+body.dark-mode .nav-links a:hover {
+    color: #ffffff;
+}
+
+
+body.dark-mode .btn-login {
+    background-color: #261e91;
+    color: #f1f1f1;
+    border: 1px solid #091961;
+}
+body.dark-mode .btn-signup {
+    background-color: #261e91;
+    color: #f1f1f1;
+    border: 1px solid #06166d;
+}
+body.dark-mode .btn-login:hover,
+body.dark-mode .btn-signup:hover {
+    background-color: #605d86;
+}
+
+body.dark-mode .search {
+    background: #161c70;          
+    border: 1px solid #161c70;
+}
+
+body.dark-mode .search input {
+    background: transparent;   
+    color: #f1f1f1;            
+}
+
+
+
+body.dark-mode .slider-section,
+body.dark-mode .game-list-section,
+body.dark-mode .cards,
+body.dark-mode .cards-free,
+body.dark-mode .cards-best,
+body.dark-mode .footer {
+    background-color: #07002e;
+    color: #f1f1f1;
+}
+
+body.dark-mode .section-title{
+    color: #c9d4df;
+}
+
+body.dark-mode .next1 {
+    color: #ffffff;
+}
+
+body.dark-mode .prev1 {
+    color: #ffffff;
+}
+
+body.dark-mode .next2 {
+    color: #ffffff;
+}
+
+body.dark-mode .prev2 {
+    color: #ffffff;
+}
+
+body.dark-mode .next {
+    color: #ffffff;
+}
+
+body.dark-mode .prev {
+    color: #ffffff;
+}
+
+
+body.dark-mode .card {
+    background: #222;
+    color: #f1f1f1;
+}
+body.dark-mode .card-title {
+    color: #ffffff;
+}
+body.dark-mode .card-description {
+    color: #bbb;
+}
+body.dark-mode .card-price {
+    color: #ffcc66;
+}
+
+
+body.dark-mode .footer {
+    background-color: #07002e;
+    color: #f1f1f1;
+}
+body.dark-mode .footer a {
+    color: #ccc;
+}
+body.dark-mode .footer a:hover {
+    color: #ffcc66;
+}
+
+
+.fa-sun {
+    color: orange;
+}
+.fa-moon {
+    color: yellow;
+}
+
 
 
 

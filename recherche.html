@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kicksoft</title>
+    <link rel="stylesheet" href="recherche.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logofull.png" width="157" height="54" alt="logo">
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="index.html">Jeux</a>
+            <a href="cart.htm">Panier</a>
+        </nav>
+
+        <div class="nav-right">
+            <div class="user-action">
+                <button class="mode"><span><i class="fa-solid fa-sun" id="toggledark"></i></span></button>
+                <button class="lang"><span>🌐</span></button>
+                <a href="login.html" class="btn-login">Se connecter</a>
+                <a href="signup.html" class="btn-signup">S'inscrire</a>
+            </div>
+            <form class="search" action="search.html" method="get">
+                <input type="text" name="q" placeholder="Rechercher">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+        
+    </header>
+    <main>
+        <section class="game-list-section"> 
+            <div class="container">
+                <div class="section-header">
+                    <h4 class="section-title">Afficher : Tout <i class="fa-solid fa-chevron-down"></i></h4>
+                </div>
+                
+                <div class="card">
+                    <img src=".jpg" width="200" height="280">
+                    <div class="card-text">
+                        <h4 class="card-title"> Card-title_</h4>
+                        <p class="card-description"> Card-description_</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-price">$</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="filters">
+            <div class="filters-header">
+                <h4>Filtres ( )</h4>
+                <a href="#" class="reset">Réinitialisé</a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Rechercher">
+            </div>
+            <br>
+            <details>
+                <summary>Prix</summary>
+                <div class="filter-content">
+                    <label><input type="checkbox"> Gratuit</label><br>
+                    <label><input type="checkbox"> Payant</label>
+                </div>
+            </details>
+            <details>
+                <summary>Genre</summary>
+                <div class="filter-content">
+                    <label><input type="checkbox"> Action</label><br>
+                    <label><input type="checkbox"> Aventure</label>
+                </div>
+            </details>
+            <details>
+                <summary>Types</summary>
+                <div class="filter-content">
+                    <label><input type="checkbox"> Solo</label><br>
+                    <label><input type="checkbox"> Multi</label>
+                </div>
+            </details>
+            <details>
+                <summary>Platform</summary>
+                <div class="filter-content">
+                    <label><input type="checkbox"> PC</label><br>
+                    <label><input type="checkbox"> PS5</label>
+                </div>
+            </details>
+            <details>
+                <summary>Fonctionnalité</summary>
+                <div class="filter-content">
+                    <label><input type="checkbox"> En ligne</label><br>
+                    <label><input type="checkbox"> Hors ligne</label>
+                </div>
+            </details>
+        </aside>
+        
+    </main>
+    <footer class="footer">
+        <div class="container1">
+            <hr>
+            <div class="footer-columns">
+                <div class="contact-info">
+                
+                    <h3>Nos contact</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i><strong>Email  : </strong><br><span>  kicksoft.tn@gmail.com</span></li>
+                        <li><i class="fa-solid fa-phone"></i><strong>Téléphone  : </strong> <br><span>  +216 51 756 057</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i><strong>Emplacement  : </strong><br><span>  Tunisie</span></li>
+                    </ul>
+                </div>
+            <div class="social-media">
+                <h3>Suivez-nous</h3>
+                <a href="https://www.facebook.com/share/15oiqjph4x/"><i class="fa-brands fa-facebook-f"></i></a></li><br>
+                <a href="https://www.instagram.com/kicksoft.tn?igsh=MWFtZDdmMWtjbmpjeQ=="><i class="fa-brands fa-instagram"></i></a></li><br>
+                <a href="https://tn.linkedin.com/company/kicksoft-tn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </div>
+            </div>
+            <hr>
+            <div class="about-us">
+                <h3>À propos de Kicksoft</h3>
+                <p>Kicksoft est une startup tunisienne spécialisée dans les jeux vidéo multiplateformes,notamment les visual novels. Nous utilisons l'intelligence artificielle pour créer des expériences immersives où les choix du joueur influencent l'histoire, repoussant ainsi les limites du divertissement interactif.</p>
+            </div>
+            <hr>
+            <div class="footer-right">
+                <a href="https://www.facebook.com/share/15oiqjph4x/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <a href="https://www.instagram.com/kicksoft.tn?igsh=MWFtZDdmMWtjbmpjeQ=="><i class="fa-brands fa-instagram"></i></a></li>
+                <a href="https://tn.linkedin.com/company/kicksoft-tn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

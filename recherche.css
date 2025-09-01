@@ -1,0 +1,401 @@
+body {
+  background-color: #E5F5FF;
+  margin: 0;
+  font-family: Arial, sans-serif;
+ 
+}
+
+
+.navbar{
+    background-color: #E5F5FF;
+    padding: 10px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img{
+    display: block;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links a {
+    margin: 30px;
+    text-decoration: none;
+    color:#1983CF;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-links a:hover{
+    color: #005fa3;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.user-action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn-login,.btn-signup {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid #a3a3a3;
+    transition: 0.3s;
+}
+
+.btn-login{
+    background-color: #D6E2E9 ;
+    color: #000000;
+    border:1px solid #A5ADB2
+}
+.btn-login:hover{
+    background-color:#ffffff ;
+}
+
+
+.btn-signup{
+    background-color: #D2EFFD ;
+    color:#000000;
+    border:1px solid #8BBFD7
+}
+.btn-signup:hover {
+    background-color: #a3dcfa;
+}
+
+.mode{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size:18px;
+}
+
+.lang{
+    background: none;
+    border: none;
+    font-size:18px;
+    cursor:pointer
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #a5a4a488;
+    border-radius: 20px;
+    padding: 4px  10px;
+    background: #ffffffbb;
+}
+.search input{
+    border: none;
+    outline: none;
+    padding: 6px;
+    font-size:14px;
+}
+.search button {
+    background:none ;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 600px 300px; 
+    gap: 10rem;
+    max-width: 1200px;
+    margin: 0.5rem auto;
+    padding: 1rem 2rem;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.game-list-section  {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-header {
+    margin-bottom: 1rem;
+}
+
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #7999AF;
+}
+
+
+.card {
+    background: #f2faff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(129, 65, 202, 0.692);
+    width: 220px;
+    transition: transform 0.5s ease;
+}
+
+
+.card img {
+    width: 100%;;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-title {
+    font-weight: bold;
+    font-weight: 500;
+    margin: 0 0 5px;
+    color: #140049;
+}
+
+.card-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    color: #720000;
+}
+
+.card-description {
+    font-size: 13px;
+    font-size: bold;
+    color: #261e92;
+    margin: 0;
+}
+
+
+.filters {
+    background: #e4f4fd93;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 10px rgba(20, 0, 92, 0.39);
+    height: fit-content;
+    margin-top: 4rem;
+}
+.filters-header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.filters-header h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.filters-header .reset {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+.filters-header .reset:hover {
+    text-decoration: underline;
+}
+
+.search-box {
+    margin-bottom: 0.5rem;
+}
+.search-box input {
+    width: 220px;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.filters details {
+    margin-bottom: 0.8rem;
+}
+.filters summary {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #ddd;
+}
+.filters .filter-content {
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+}
+.filters label {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+
+
+
+.footer {
+    background-color: #E5F5FF; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #05043a;
+    padding: 100px 100px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer h3::after {
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background-color: #000000;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer ul li i {
+    width: 50px;
+    height: 20px;
+    font-size: 24px;
+    margin-right: 10px;
+   
+}
+
+
+.social-media a {
+    padding-right: 350px;
+    color: #000000;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ff00c8;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #000c25;
+}
+
+
+
+
+
+
+body.dark-mode {
+    background-color: #07002e; 
+    color: #f1f1f1;           
+    
+}
+
+body.dark-mode .navbar {
+    background-color: #07002e;
+}
+
+body.dark-mode .nav-links a {
+    color: #e0e0e0;
+}
+body.dark-mode .nav-links a:hover {
+    color: #ffffff;
+}
+
+
+body.dark-mode .btn-login {
+    background-color: #261e91;
+    color: #f1f1f1;
+    border: 1px solid #091961;
+}
+body.dark-mode .btn-signup {
+    background-color: #261e91;
+    color: #f1f1f1;
+    border: 1px solid #06166d;
+}
+body.dark-mode .btn-login:hover,
+body.dark-mode .btn-signup:hover {
+    background-color: #605d86;
+}
+
+body.dark-mode .search {
+    background: #161c70;          
+    border: 1px solid #161c70;
+}
+
+body.dark-mode .search input {
+    background: transparent;   
+    color: #f1f1f1;            
+}
+
+
+
+
+body.dark-mode .card {
+    background: #9a95dd34;
+    color: #f1f1f1;
+}
+body.dark-mode .card-title {
+    color: #ffffff;
+}
+body.dark-mode .card-description {
+    color: #bbb;
+}
+body.dark-mode .card-price {
+    color: #ffcc66;
+}
+
+
+
+
+body.dark-mode .footer {
+    background-color: #07002e;
+    color: #f1f1f1;
+}
+body.dark-mode .footer a {
+    color: #ccc;
+}
+body.dark-mode .footer a:hover {
+    color: #ffcc66;
+}
+
+
+.fa-sun {
+    color: orange;
+}
+.fa-moon {
+    color: yellow;
+}
